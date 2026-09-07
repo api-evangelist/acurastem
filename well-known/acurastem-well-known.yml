@@ -1,0 +1,71 @@
+generated: '2026-09-06'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of every host this record knows for AcuraStem
+  (the registrable domain acurastem.com and its www host). AcuraStem publishes no API
+  baseURL, no OpenAPI servers[] host, and no docs/console host, so there is no third
+  host to probe. Every /.well-known/ path returned a Concrete CMS 9.5.2 HTML 404 page.
+  No WellKnown or SecurityTxt pointer is emitted in apis.yml: this file records a
+  verified absence, not a served surface.
+name: AcuraStem well-known discovery probe
+description: >-
+  Probe record for RFC 8615 /.well-known/ discovery documents on AcuraStem hosts.
+  Nothing is served. Recorded so the absence is evidenced rather than assumed.
+result: none
+checked: '2026-09-06'
+hosts:
+- host: acurastem.com
+  note: Registrable domain; Concrete CMS 9.5.2 marketing site. All paths return the
+    site's HTML 404 template.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.acurastem.com
+  note: Serves the same origin as the apex; identical 404 template on every path.
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
