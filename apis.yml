@@ -31,7 +31,7 @@ tags:
 - Neurodegenerative Disease
 - ALS
 - Stem Cells
-- Machine-Learning
+- Machine Learning
 - Private Company
 tags_raw:
 - Company
@@ -45,6 +45,7 @@ tags_raw:
 - Stem Cells
 - Machine Learning
 - Private Company
+- Machine-Learning
 apis: []
 maintainers:
 - FN: Kin Lane
